@@ -1,0 +1,22 @@
+#Hero {
+  max-width: 1404px;
+  margin: 0 auto 100px;
+  @media (max-width: 786px) {
+    margin-bottom: 20px;
+  }
+  .hero_background {
+    max-width: 1324px;
+    max-height: 613px;
+    margin: auto;
+    @media (max-width: 786px) {
+      padding: 30px;
+    }
+    @media (max-width: 786px) {
+      padding: 10px;
+    }
+    img {
+      box-shadow: 0 0 20px rgb(184, 183, 183);
+      width: 100%;
+    }
+  }
+}

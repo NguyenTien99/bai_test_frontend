@@ -1,0 +1,96 @@
+header {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 33px 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ninjaMail__logo {
+      img {
+        @media (max-width: 320px) {
+          width: 84px;
+        }
+      }
+      span {
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 41px;
+        @media (max-width: 786px) {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+    .header__link {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+      text-align: center;
+      @media (max-width: 786px) {
+        width: 65%;
+      }
+      @media (max-width: 320px) {
+        width: 30%;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 320px) {
+          display: none;
+        }
+        li {
+          font-size: 17px;
+          font-weight: 800;
+          line-height: 20px;
+          margin: 10px;
+          list-style: none;
+          position: relative;
+          text-align: center;
+          a {
+            text-decoration: none;
+            color: #000000;
+            padding: 5px;
+            @media (max-width: 786px) {
+              font-size: 11px;
+              line-height: 13px;
+              letter-spacing: 0.825px;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            margin: 0 auto;
+            width: 100%;
+            left: 0;
+            bottom: -10px;
+            display: block;
+            height: 5px;
+            background-color: #4ba87d;
+            @media (max-width: 786px) {
+              height: 3px;
+            }
+          }
+        }
+      }
+      button {
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1.275px;
+        padding: 10px 20px 11px;
+        background-color: #4ba87d;
+        color: white;
+        border: none;
+        @media (max-width: 786px) {
+          padding: 6px 13.5px;
+          font-size: 11px;
+          line-height: 13px;
+          letter-spacing: 0.825px;
+        }
+      }
+    }
+  }
+}
